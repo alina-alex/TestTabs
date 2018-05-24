@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>step-one</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <header class="header page__header">
+        <div class="left">
+            <div class="icon" id="toggle">
+                <div class="top"></div>
+                <div class="middle"></div>
+                <div class="bottom"></div>
+            </div>
+            <img class="logo" src="img/Apple-Apple.svg" alt="">
+            <div id=selectBox>
+                <ul id="selectMenuBox"  class="lang-switcher">
+                    <i class="fas fa-angle-down arrow"></i>
+                    <li class="lang-switcher__item option">
+                        <a class="lang-switcher__link" href="/"><img src="img/en.png" alt=""><span>en</span></a>
+                    </li>
+                    <li class="lang-switcher__item option">
+                        <a class="lang-switcher__link" href="index_ru.html"><img src="img/en.png" alt=""><span>ru</span></a>
+                    </li>
+                    <li class="lang-switcher__item option">
+                        <a class="lang-switcher__link" href="index_uk.html"><img src="img/en.png" alt=""><span>uk</span></a>
+                    </li>
+                    <li class="lang-switcher__item option">
+                        <a class="lang-switcher__link" href="index_it.html"><img src="img/en.png" alt=""><span>it</span></a>
+                    </li>
+                    <li class="lang-switcher__item option">
+                        <a class="lang-switcher__link" href="index_es.html"><img src="img/en.png" alt=""><span>es</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="https://">Evaluation</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="https://">Coin</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="https://">Team</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="https://">Faq</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="https://">Videos</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="https://">News</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="button_block">
+                    <button class="button button_01">
+                        <span class="button__inner">
+                            Log in
+                        </span>
+                    </button>
+                    <button class="button button_02">
+                        <span class="button__inner">
+                           Whitepaper
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="login">
+                <span>Log in</span>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </header>
+<footer>
+
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/selectbox.js"></script>
+<script>
+    $('selector').selectbox();
+    /****************************/
+    $('#toggle').click(function() {
+        $(this).toggleClass('is_active');
+        $('#overlay').toggleClass('open');
+    });
+</script>
+</body>
+</html>
